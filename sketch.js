@@ -115,7 +115,7 @@ function draw() {
   image(rightBeltImg, 240, 440, 100, 100)
     
   if(frameCount % 100 == 0){ // Generate a trash item every 100 frames
-    randomFuncNumber = 1//Math.round(random(1,4)) // Random number between 1 to 4
+    randomFuncNumber = Math.round(random(1,4)) // Random number between 1 to 4
     switch(randomFuncNumber){
       case 1:
               createCans() // Making Cans appear
